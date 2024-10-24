@@ -3,32 +3,173 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>About Our Team - AI Prescriptor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+      body {
+        background-color: #121212;
+        color: #e0e0e0;
+      }
+      .hero-section {
+        background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+        color: white;
+        padding: 4rem 0;
+        border-bottom: 1px solid #333;
+      }
+      .team-card {
+        transition: transform 0.3s ease;
+        border-radius: 15px;
+        overflow: hidden;
+        background-color: #1e1e1e;
+        border: 1px solid #333;
+      }
+      .team-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+      }
+      .expertise-icon {
+        width: 60px;
+        height: 60px;
+        background: #2d2d2d;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1rem;
+        border: 1px solid #444;
+      }
+      .text-muted {
+        color: #9e9e9e !important;
+      }
+      .card {
+        background-color: #1e1e1e;
+        border: 1px solid #333;
+      }
+      .bg-light {
+        background-color: #1e1e1e !important;
+      }
+      .btn-primary {
+        background-color: #4a148c;
+        border-color: #4a148c;
+      }
+      .btn-primary:hover {
+        background-color: #6a1b9a;
+        border-color: #6a1b9a;
+      }
+      .text-primary {
+        color: #9c27b0 !important;
+      }
+      .icon-glow {
+        filter: drop-shadow(0 0 3px rgba(156, 39, 176, 0.4));
+      }
+      .section-divider {
+        height: 1px;
+        background: linear-gradient(90deg, transparent, #333, transparent);
+        margin: 3rem 0;
+      }
+      .card-highlight {
+        position: relative;
+        overflow: hidden;
+      }
+      .card-highlight::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg, #4a148c, #9c27b0);
+      }
+    </style>
   </head>
   <body>
+    <!-- Hero Section -->
+    <div class="hero-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-8 mx-auto text-center">
+            <h1 class="fw-bold mb-4">Meet Our Team</h1>
+            <p class="lead mb-0">Pioneering AI Solutions in Healthcare</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  <div class="container my-4 mt-4">
-<h6>    About prash: Your AI & ML Engineer
-</h6>
-<h5>Meet the Developer</h5>
+    <!-- Main Content -->
+    <div class="container py-5">
+      <!-- Team Overview -->
+      <div class="row mb-5">
+        <div class="col-lg-8 mx-auto text-center">
+          <h2 class="mb-4">About Our Team</h2>
+          <p class="lead text-muted">A dedicated group of four innovators combining expertise in AI, ML, and healthcare to revolutionize medical prescriptions.</p>
+        </div>
+      </div>
 
-<p>Hello, Our Team of 4 people 
-</p>
-<h5>Our Expertise
-</h5>
-<p>With a strong academic background in computer science and a deep fascination for AI and ML, We embarked on a journey that has taken me across the globe, working on diverse and innovative projects. Over the years, We had the privilege of collaborating on international projects that have pushed the boundaries of what's possible in AI and ML.
-</p>
-<h5>A Commitment to Excellence
-</h5>
-<p>Our work is driven by a commitment to excellence and a belief that technology should be accessible and beneficial to everyone. Whether it's developing predictive models, creating intelligent algorithms, or designing user-friendly interfaces, We strive for solutions that are both cutting-edge and user-centric.
-</p>
-<h5>Passion for Health Tech
-</h5>
-<p>The development of AI Prescriptor represents a convergence of my passion for AI and my dedication to improving healthcare accessibility. We believe that AI has the potential to transform the way we approach healthcare, making it more personalized and informative. This platform is a testament to that vision.
-</p>
+      <!-- Expertise Section -->
+        <div class="row g-4 mb-5" style="display: flex; justify-content: center; align-items: center;">
+          <div class="col-md-4">
+            <div class="card h-100 shadow team-card card-highlight">
+              <div class="card-body text-center p-4">
+                <div class="expertise-icon mx-auto">
+                  <i class="fas fa-brain fa-2x text-primary icon-glow"></i>
+                </div>
+                <h4 style="color: whitesmoke;">AI & ML Expertise</h4>
+                <p class="text-muted">Specialized in developing cutting-edge AI and ML solutions with a focus on healthcare applications.</p>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="col-md-4">
+            <div class="card h-100 shadow team-card card-highlight">
+              <div class="card-body text-center p-4">
+                <div class="expertise-icon mx-auto">
+                  <i class="fas fa-globe fa-2x text-primary icon-glow"></i>
+                </div>
+                <h4 style="color: whitesmoke;">Global Experience</h4>
+                <p class="text-muted">International project experience pushing the boundaries of AI and ML innovation.</p>
+              </div>
+            </div>
+          </div> -->
+          <div class="col-md-4">
+            <div class="card h-100 shadow team-card card-highlight">
+              <div class="card-body text-center p-4">
+                <div class="expertise-icon mx-auto">
+                  <i class="fas fa-heartbeat fa-2x text-primary icon-glow"></i>
+                </div>
+                <h4 style="color: whitesmoke;">Healthcare Focus</h4>
+                <p class="text-muted">Dedicated to improving healthcare accessibility through AI-driven solutions.</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-  </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+      <div class="section-divider"></div>
+
+      <!-- Mission Statement -->
+      <div class="row mb-5">
+        <div class="col-lg-10 mx-auto">
+          <div class="card shadow card-highlight">
+            <div class="card-body p-5">
+              <h3 class="mb-4" style="color: whitesmoke;">Our Commitment to Excellence</h3>
+              <p class="mb-4 text-muted">Our work is driven by a commitment to excellence and a belief that technology should be accessible and beneficial to everyone. Whether it's developing predictive models, creating intelligent algorithms, or designing user-friendly interfaces, we strive for solutions that are both cutting-edge and user-centric.</p>
+              <h3 class="mb-4" style="color: whitesmoke;">Passion for Health Tech</h3>
+              <p class="mb-0 text-muted">The development of AI Prescriptor represents a convergence of our passion for AI and dedication to improving healthcare accessibility. We believe that AI has the potential to transform the way we approach healthcare, making it more personalized and informative. This platform is a testament to that vision.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-divider"></div>
+
+      <!-- Call to Action -->
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-center">
+          <h3 class="mb-4">Ready to Transform Healthcare Together?</h3>
+          <button class="btn btn-primary btn-lg px-5">Contact Us</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
